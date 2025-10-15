@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Sadewa/Pencapaian</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/foto/logo-sadewa.png" alt="" class="logo-img">
+            <h1 class="logo-tittle">E-Sadewa</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a> </li>
+                <li><a href="index.html">Home</a> </li>
+                <li><a onclick="redirWhatsapp()">Contact</a> </li>
+            </ul>
+        </nav>
+        <button class="btn-cta" onclick="redirInstagram()">Follow me</button>
+    </header>
+    <div class="container">
+        <div class="intro">
+            <p class="tittle-pencapaian">Sepak Bola [Football]</p>
+            <p class="description-pencapaian">Satu prestasi kecil yang pernah aku capai di dunia sepak bola — sederhana,
+                tapi berharga banget buatku.</p>
+            <img src="assets/foto/pencapaian.jpg" alt="sadewa" class="img-foto">
+            <div class="description-football">
+                <p class="description-pencapaian">Dari kelas 3 sd aku mulai ikut <b>turnament</b> yang ada didesaku, dan akhir nya
+                    Pada tahun 2017, aku bersama tim berhasil meraih <b>juara</b> dalam sebuah turnamen sepak bola lokal. Waktu itu
+                    aku bermain sebagai pemain belakang dan mengenakan nomor punggung 5. Walaupun hanya satu pencapaian
+                    kecil, momen itu jadi <b>kenangan berharga</b> yang selalu aku ingat — hasil dari kerja keras, latihan, dan
+                    semangat bareng teman satu tim.</p>
+            </div>
+        </div>
+        <footer>
+            <p class="title">&copy; Alfin Sadewa Website 2025</p>
+        </footer>
+        <script>
+            function redirInstagram() {
+                window.location.href = "https://www.instagram.com/lfinsdwo/"
+            }
+
+            function redirWhatsapp() {
+                window.location.href = "https://wa.me/+6285761779383"
+            }
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Sadewa/Pencapaian</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/foto/logo-sadewa.png" alt="" class="logo-img">
+            <h1 class="logo-tittle">E-Sadewa</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">About</a> </li>
+                <li><a href="index.html">Home</a> </li>
+                <li><a onclick="redirWhatsapp()">Contact</a> </li>
+            </ul>
+        </nav>
+        <button class="btn-cta" onclick="redirInstagram()">Follow me</button>
+    </header>
+    <section class="about-html">
+        <h1>About Me <br></h1>
+        <p>
+            Halo! Aku <strong>Alfin Sadewa</strong>, seorang mahasiswa <strong>Informatika</strong> yang berasal dari
+            sebuah desa kecil di Indonesia.
+            Sebelumnya, aku menempuh pendidikan di jurusan <strong>Teknik Kendaraan Ringan Otomotif (TKRO)</strong> di
+            SMK Yayasan Perguruan Bandung 2. <br> <br>
+        </p>
+
+        <p>
+            Walaupun latar belakangku berasal dari dunia otomotif, sejak SMP aku sudah memiliki ketertarikan besar pada
+            dunia teknologi,
+            terutama dalam hal <strong>coding</strong> dan <strong>pengembangan web</strong>.
+            Aku mulai belajar secara otodidak dari rumah — mencoba memahami cara kerja website, membuat tampilan
+            sederhana, hingga mengembangkan proyek pribadi. <br> <br>
+        </p>
+
+        <p>
+            Di luar dunia teknologi, aku juga memiliki beberapa hobi lain seperti <strong>sepak bola</strong> dan
+            <strong>bulu tangkis</strong>.
+            Dari kedua hobi itu, aku belajar tentang kerja sama, fokus, dan semangat pantang menyerah — nilai yang juga
+            sangat aku pegang dalam belajar dan bekerja di bidang teknologi. <br> <br>
+        </p>
+
+        <p>
+            Saat ini aku terus mengasah kemampuan di bidang <strong>web development</strong> dan
+            <strong>pemrograman</strong>,
+            dengan tujuan untuk menciptakan karya yang bermanfaat dan bisa memberikan dampak positif bagi banyak orang.
+            Aku percaya bahwa setiap langkah kecil dalam belajar akan membawaku lebih dekat menuju impian besar di dunia
+            teknologi. <br> <br>
+        </p>
+
+        <p>
+            Jika kamu ingin mengenal aku lebih jauh, jangan ragu untuk <a onclick="redirWhatsapp()"
+                class="pencapaian">menghubungi aku di sini</a>
+            atau cek beberapa <a href="" class="pencapaian">proyek yang pernah aku buat</a>. <br> <br>
+        </p>
+
+        <p>
+             <b>Web ini dibuat menggunakan bahasa:</b>
+        </p>
+    </section>
+    <div class="container">
+        <div class="card-about">
+            <div class="card1-build">
+                <img src="assets/icon/html.png" alt="icon 1" class="icon">
+                <p class="card-tittle"><b>HyperText Markup Language</b></p>
+                <p class="card-description">Membuat dan menyusun struktur halaman web</p>
+            </div>
+            <div class="card2-build">
+                <img src="assets/icon/css.png" alt="icon 2" class="icon">
+                <p class="card-tittle"><b>Cascading Style Sheets</b></p>
+                <p class="card-description">Mengatur tampilan dan desain halaman web</p>
+            </div>
+            <div class="card3-build">
+                <img src="assets/icon/js.png" alt="icon 3" class="icon">
+                <p class="card-tittle"><b>JavaScript</b></p>
+                <p class="card-description">Membuat halaman web lebih interaktif, mengatur perilaku, dan logikan web
+                </p>
+            </div>
+        </div>
+
+        <footer>
+            <p class="title">&copy; Alfin Sadewa Website 2025</p>
+        </footer>
+        <script>
+            function redirInstagram() {
+                window.location.href = "https://www.instagram.com/lfinsdwo/"
+            }
+
+            function redirWhatsapp() {
+                window.location.href = "https://wa.me/+6285761779383"
+            }
+        </script>
+</body>
+
+</html>
