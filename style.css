@@ -36,7 +36,7 @@ header {
 }
 
 .logo:hover {
-  color: #ff6a3d;
+  color: rgb(255, 197, 122);
   transform: rotate(2deg);
 }
 
@@ -45,8 +45,8 @@ header {
   border: none;
   font-size: 20px;
   padding: 6px 12px;
-  background: #ff6a3d;
-  color: white;
+  background: rgb(255, 197, 122);
+  color: #eaeaea;
   border-radius: 8px;
   cursor: pointer;
 }
@@ -63,17 +63,33 @@ li {
 
 li a {
   display: inline-block;
-  transition: all 0.5s ease 0s;
-}
-
-li a:hover {
-  color: #ff6a3d;
-  transform: rotate(2deg);
 }
 
 a {
-  color: white;
+  color: transparent;
   text-decoration: none;
+  font-size: 15px;
+  transition: all 0.5s ease-in-out;
+}
+
+a:hover {
+  color: white;
+  transform: translateY(-10px);
+}
+
+i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: white;
+  margin-top: -15px;
+  transition: all 0.5s ease-in-out;
+}
+
+i:hover {
+  transform: translateY(20px);
+  color: burlywood;
 }
 
 .container {
@@ -109,7 +125,7 @@ a {
 }
 
 .parallax {
-  background-image: url("assets/foto/6913ba22ad5492354f476d71cfac7936.jpg");
+  background-image: url("assets/foto/download.gif");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -266,6 +282,17 @@ footer {
   margin: 5px;
 }
 
+.about {
+  font-weight: bold;
+  color: burlywood;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.about:hover {
+  color: #1a2238;
+}
+
 .card-about {
   display: flex;
   flex-wrap: wrap;
@@ -292,8 +319,8 @@ footer {
   width: 25%;
   min-height: 200px;
   max-height: 300px;
-  background: linear-gradient(90deg, #204a88 35%, #B1C9EF);
-  color: #B1C9EF;
+  background: linear-gradient(90deg, #204a88 35%, #b1c9ef);
+  color: #b1c9ef;
   padding: 24px;
   box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.5);
   border-radius: 8px;
@@ -311,8 +338,12 @@ footer {
   border-radius: 8px;
 }
 
-@media screen and (max-width: 500px) {
+.card-tittle-project {
+  font-size: 18px;
+  font-weight: border;
+}
 
+@media screen and (max-width: 500px) {
   .card-about {
     flex-direction: column;
     gap: 0;
@@ -331,5 +362,155 @@ footer {
   .card3-build {
     width: 100%;
     opacity: 0.9;
+  }
+}
+
+/* ===== WILAYAH PROJECT CSS ===== */
+
+.title2 {
+  margin-top: -10px;
+}
+
+.content1 {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  padding: 15px;
+  gap: 20px;
+}
+
+.project-icon {
+  width: 50px;
+  height: 50px;
+  animation: true 2s ease-in-out infinite;
+}
+
+.isi-content1 {
+  padding: 5px;
+  margin: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  background: burlywood;
+  color: #1a2238;
+  box-shadow: 3px 3px 3px gray;
+  animation: 2s ease-in-out infinite;
+}
+
+.content2 {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin: 5px;
+  padding: 15px;
+  gap: 20px;
+}
+
+.isi-content2 {
+  padding: 5px;
+  margin: 5px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background: burlywood;
+  color: #1a2238;
+  box-shadow: 3px 3px 3px gray;
+  animation: 2s ease-in-out infinite;
+}
+
+.parallax-project {
+  background-image: url("assets/foto/3D\ Isometric\ Animated\ Pack.gif");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.container-project {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 70px 0;
+}
+
+.card-project {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.card-item-project {
+  text-align: center;
+  width: 25%;
+  min-height: 200px;
+  max-height: 300px;
+  backdrop-filter: blur(10px);
+  color: #eaeaea;
+  padding: 24px;
+  box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.card-description-project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  color: white;
+  background: #1a2238;
+}
+
+.card-description-project:hover {
+  transform: translateY(-5px);
+  font-weight: bold;
+  color: #1a2238;
+  background: burlywood;
+}
+
+@keyframes true {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card-project {
+    padding: 50px;
+    margin: 50px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .card-item-project {
+    width: 100%;
+    opacity: 0.9;
+  }
+
+  .container-project {
+    width: 100%;
+    padding: 0;
   }
 }
