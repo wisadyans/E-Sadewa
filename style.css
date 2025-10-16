@@ -237,6 +237,8 @@ footer {
   }
 
   nav {
+    display: flex;
+    justify-content: center;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -419,7 +421,15 @@ footer {
 }
 
 .parallax-project {
-  background-image: url("assets/foto/3D\ Isometric\ Animated\ Pack.gif");
+  background-image: url("assets/foto/download1.gif");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.parallax-project1 {
+  background-image: url("assets/foto/download2.gif");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -438,7 +448,16 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  margin-bottom: 20px;
+  gap: 35px;
+}
+
+.icon-project {
+  width: 75px;
+  height: 75px;
+  margin: 10px;
+  padding: 4px;
+  border-radius: 10px;
 }
 
 .card-item-project {
@@ -447,7 +466,7 @@ footer {
   min-height: 200px;
   max-height: 300px;
   backdrop-filter: blur(10px);
-  color: #eaeaea;
+  color: burlywood;
   padding: 24px;
   box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.5);
   border-radius: 8px;
@@ -498,11 +517,8 @@ footer {
 
 @media screen and (max-width: 500px) {
   .card-project {
-    padding: 50px;
-    margin: 50px;
     flex-direction: column;
-    align-items: center;
-    gap: 15px;
+    gap: 0;
   }
   .card-item-project {
     width: 100%;

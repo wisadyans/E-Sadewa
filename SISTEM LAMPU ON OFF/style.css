@@ -1,0 +1,510 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: #1a2238;
+  color: #eaeaea;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  margin-right: auto;
+  display: flex;
+  gap: 6px;
+}
+
+.logo-img {
+  width: 35px;
+  height: 35px;
+  margin-left: 10px;
+}
+
+.logo-tittle {
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+}
+
+.logo:hover {
+  color: rgb(255, 197, 122);
+  transform: rotate(2deg);
+}
+
+.btn-cta {
+  margin-right: 10px;
+  border: none;
+  font-size: 20px;
+  padding: 6px 12px;
+  background: rgb(255, 197, 122);
+  color: #eaeaea;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  padding: 20px;
+}
+
+li {
+  list-style: none;
+  padding: 10px;
+}
+
+li a {
+  display: inline-block;
+}
+
+a {
+  color: transparent;
+  text-decoration: none;
+  font-size: 15px;
+  transition: all 0.5s ease-in-out;
+}
+
+a:hover {
+  color: white;
+  transform: translateY(-10px);
+}
+
+i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: white;
+  margin-top: -15px;
+  transition: all 0.5s ease-in-out;
+}
+
+i:hover {
+  transform: translateY(20px);
+  color: burlywood;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 70px 0;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.tittle {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 28px;
+  font-weight: bolder;
+}
+
+.img-foto {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  max-width: 500px;
+}
+
+.parallax {
+  background-image: url("assets/foto/download.gif");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.tentang {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #1a2238;
+  color: #eaeaea;
+  padding: 40px;
+}
+
+.mt-10 {
+  margin-top: 20px;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-tittle {
+  font-size: 18px;
+  font-weight: border;
+}
+
+.card-description {
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.card-item {
+  text-align: center;
+  width: 25%;
+  min-height: 200px;
+  max-height: 300px;
+  backdrop-filter: blur(10px);
+  color: #eaeaea;
+  padding: 24px;
+  box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.icon {
+  width: 75px;
+  height: 75px;
+  margin: 10px;
+  padding: 4px;
+}
+
+.tittle-hobi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #1a2238;
+  color: #eaeaea;
+  padding: 40px;
+}
+
+.hobi-teks {
+  gap: 8px;
+  color: #eaeaea;
+  font-size: 15px;
+}
+
+.pencapaian {
+  font-weight: bold;
+  color: burlywood;
+  cursor: pointer;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #1a2238;
+  color: #eaeaea;
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    flex-direction: column;
+    gap: 0;
+  }
+  .card-item {
+    width: 100%;
+    opacity: 0.9;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .intro {
+    margin-top: 20px;
+  }
+
+  .img-foto {
+    padding: 0;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #1a2238;
+    z-index: 9;
+  }
+
+  footer {
+    margin-bottom: 70px;
+    margin-top: 70px;
+  }
+}
+
+/* ===== WILAYAH PENCAPAIAN CSS ===== */
+
+.description-football {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #1a2238;
+  color: #eaeaea;
+  padding: 40px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.tittle-pencapaian {
+  font-size: 25px;
+  font-weight: bold;
+  color: #1a2238;
+}
+
+.description-pencapaian {
+  padding: 15px;
+  margin: 5px;
+}
+
+/* ===== WILAYAH ABOUT CSS ===== */
+
+.about-html {
+  padding: 15px;
+  margin: 5px;
+}
+
+.about {
+  font-weight: bold;
+  color: burlywood;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.about:hover {
+  color: #1a2238;
+}
+
+.card-about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 35px;
+}
+
+.card1-build {
+  text-align: center;
+  width: 25%;
+  min-height: 200px;
+  max-height: 300px;
+  background: linear-gradient(90deg, rgb(255, 77, 0) 35%, orange);
+  color: #eaeaea;
+  padding: 24px;
+  box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.card2-build {
+  text-align: center;
+  width: 25%;
+  min-height: 200px;
+  max-height: 300px;
+  background: linear-gradient(90deg, #204a88 35%, #b1c9ef);
+  color: #b1c9ef;
+  padding: 24px;
+  box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.card3-build {
+  text-align: center;
+  width: 25%;
+  min-height: 200px;
+  max-height: 300px;
+  background: linear-gradient(90deg, #c8ab04 35%, #ffed86);
+  color: #eaeaea;
+  padding: 24px;
+  box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.card-tittle-project {
+  font-size: 18px;
+  font-weight: border;
+}
+
+@media screen and (max-width: 500px) {
+  .card-about {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .card1-build {
+    width: 100%;
+    opacity: 0.9;
+  }
+
+  .card2-build {
+    width: 100%;
+    opacity: 0.9;
+  }
+
+  .card3-build {
+    width: 100%;
+    opacity: 0.9;
+  }
+}
+
+/* ===== WILAYAH PROJECT CSS ===== */
+
+.title2 {
+  margin-top: -10px;
+}
+
+.content1 {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  padding: 15px;
+  gap: 20px;
+}
+
+.project-icon {
+  width: 50px;
+  height: 50px;
+  animation: true 2s ease-in-out infinite;
+}
+
+.isi-content1 {
+  padding: 5px;
+  margin: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  background: burlywood;
+  color: #1a2238;
+  box-shadow: 3px 3px 3px gray;
+  animation: 2s ease-in-out infinite;
+}
+
+.content2 {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin: 5px;
+  padding: 15px;
+  gap: 20px;
+}
+
+.isi-content2 {
+  padding: 5px;
+  margin: 5px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background: burlywood;
+  color: #1a2238;
+  box-shadow: 3px 3px 3px gray;
+  animation: 2s ease-in-out infinite;
+}
+
+
+.container-project {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 70px 0;
+}
+
+.card-project {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-item-project {
+  text-align: center;
+  width: 25%;
+  min-height: 200px;
+  max-height: 300px;
+  backdrop-filter: blur(10px);
+  color: burlywood;
+  padding: 24px;
+  box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.card-description-project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  color: white;
+  background: #1a2238;
+}
+
+.card-description-project:hover {
+  transform: translateY(-5px);
+  font-weight: bold;
+  color: #1a2238;
+  background: burlywood;
+}
+
+@keyframes true {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card-project {
+    padding: 50px;
+    margin: 50px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .card-item-project {
+    width: 100%;
+    opacity: 0.9;
+  }
+
+  .container-project {
+    width: 100%;
+    padding: 0;
+  }
+}
