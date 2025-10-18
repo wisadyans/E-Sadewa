@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Sadewa/Project/Sadewa-Tech</title>
+    <title>E-Sadewa/Project/Sadewa-Tech/Technology-Used</title>
     <link rel="stylesheet" href="style.css">
 
     <link rel="icon" type="image/png" href="../assets/icon/logo-sadewa.png">
@@ -22,7 +22,8 @@
     <link rel='stylesheet'
         href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-chubby/css/uicons-solid-chubby.css'>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
 </head>
 
 <body>
@@ -33,49 +34,48 @@
         </div>
         <nav>
             <ul>
-                <li><a href="used.html">Tools Used <i class="fi fi-sr-layers"></i></a> </li>
-                <li><a href="../project.html">Project <i class="fi fi-rs-display-code"></i></a></li>
+                <li><a href="#">Tools Used <i class="fi fi-sr-layers"></i></a> </li>
+                <li><a href="index.html">Back <i class="fi fi-sc-angle-double-small-left"></i></a></li>
                 <li><a href="../index.html">Home <i class="fi fi-sr-home"></i></a> </li>
                 <li><a onclick="redirWhatsapp()">Chat me <i class="fi fi-ss-comment"></i></a></li>
             </ul>
         </nav>
         <button class="btn-cta" onclick="redirInstagram()">Follow me</button>
     </header>
-    <div class="function-lampu">
-        <h1 class="tittle-lampu">SadewaTech – Smart Switch System</h1>
-        <p class="tittle2-lampu">Satu sentuhan, satu cahaya.</p>
-        <img src="asstes/images/off.gif" alt="LAMPU icon" id="lampu1">
-        <button class="button-saklar" onclick="saklar ('off')">NYALAKAN LAMPU</button>
-        <button class="button-saklar" onclick="saklar ('on')">MATIKAN LAMPU</button>
-    </div>
-    <section class="cara-kerja">
-  <h2>Cara Kerja Sistem</h2>
-  <p><br>
-    Sistem bekerja dengan prinsip sederhana:
-    saat tombol “NYALAKAN” ditekan, sistem mengirim sinyal untuk mengganti
-    status lampu menjadi hidup. Saat tombol “MATIKAN” ditekan, sistem
-    mengembalikan ke kondisi mati.
-  </p>
-  <img src="foto/cara-kerja-sistem.png" alt="Diagram Alur Kerja" class="cara-kerja-sistem">
-</section>
+    <section class="tech">
+        <h2 class="judul1-tech">Teknologi yang Digunakan</h2>
+        <p class="isi1-tech">
+            Dalam proyek SadewaTech, beberapa teknologi dasar web digunakan untuk membangun
+            simulasi sistem saklar digital. Berikut adalah teknologi yang berperan utama:
+        </p>
+        <div class="card-project">
+            <div class="card-item-project">
+                <h3>HTML & CSS</h3>
+                <p>Untuk membuat tampilan web dan simulasi visual saklar.</p>
+            </div>
+            <div class="card-item-project">
+                <h3>JavaScript</h3>
+                <p>Mengontrol perubahan status lampu melalui event tombol.</p>
+            </div>
+            <div class="card-item-project">
+                <h3>GIF Animation</h3>
+                <p>Memberi efek visual seolah lampu benar-benar menyala dan mati.</p>
+            </div>
+        </div>
+    </section>
+    <section class="future">
+        <h2>Rencana Pengembangan</h2>
+        <p><br>
+            Ke depan, sistem SadewaTech akan dikembangkan menjadi saklar otomatis
+            yang bisa terhubung dengan jaringan Wi-Fi, sehingga dapat dikontrol
+            dari smartphone atau komputer melalui aplikasi berbasis IoT.
+        </p>
+    </section>
 
     <footer>
         <p class="title">&copy; Alfin Sadewa Website 2025</p>
     </footer>
     <!-- WILAYAH SCRIPT JS -->
-    <script>
-        function saklar(params) {
-            console.log(params);
-            let lampu1 = document.getElementById("lampu1");
-
-            if (params == "off") {
-                lampu1.src = "asstes/images/on.gif";
-            }
-            if (params == "on") {
-                lampu1.src = "asstes/images/off.gif";
-            }
-        }
-    </script>
     <script>
         function redirInstagram() {
             window.location.href = "https://www.instagram.com/lfinsdwo/"
@@ -86,4 +86,5 @@
         }
     </script>
 </body>
+
 </html>
